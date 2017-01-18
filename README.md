@@ -19,7 +19,7 @@ Change a style like this:
     MSToast.minimumOutsideHorizontalMargin = 21.0;
 The change will be global and encouraged to put this in AppDelegate.
 
-All changable
+All changable syles: 
 
 ```
 /// the horizontal margin on each side between toast container view and device side edges
