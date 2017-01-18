@@ -3,20 +3,26 @@ A simple android-like toast written in Swift 3.0
 =========
 
 How to install?
+```
 Cocoapod: pod 'MSToast'
-Manual: drag MSToast.swift file into your project. Done.
+```
+Manual: drag `MSToast.swift` file into your project. Done.
 
 How to use?
+```
 // display "Sample Mesasge" at the bottom of targetView for 2 seconds
 MSToast.showToast(targetView, text: "Sample Message", duration: 2); 
 //  hide all toasts in display
 MSToast.hideAllToasts(); 
+```
 
 Styles
 ------
 
 Change a style like this: 
-    MSToast.minimumOutsideHorizontalMargin = 21.0;
+```
+MSToast.minimumOutsideHorizontalMargin = 21.0;
+```
 The change will be global and encouraged to put this in AppDelegate.
 
 All changable syles: 
