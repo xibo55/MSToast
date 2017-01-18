@@ -12,6 +12,10 @@ MSToast.showToast(targetView, text: "Sample Message", duration: 2);
 MSToast.hideAllToasts(); 
 
 Styles
+Change a style like this: 
+    MSToast.minimumOutsideHorizontalMargin = 21.0;
+The change will be global and encouraged to put this in AppDelegate.
+
     /// the horizontal margin on each side between toast container view and device side edges
     public static var minimumOutsideHorizontalMargin: CGFloat = 20.0;
     /// the vertical margin at the bottom between toast container view and device bottom edge
