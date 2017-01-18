@@ -12,6 +12,7 @@ MSToast.showToast(targetView, text: "Sample Message", duration: 2);
 MSToast.hideAllToasts(); 
 
 Styles
+
 Change a style like this: 
     MSToast.minimumOutsideHorizontalMargin = 21.0;
 The change will be global and encouraged to put this in AppDelegate.
