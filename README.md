@@ -2,12 +2,14 @@
 A simple android-like toast written in Swift 3.0
 
 How to install?
+------
 ```
 Cocoapod: pod 'MSToast'
 ```
 Manual: drag `MSToast.swift` file into your project. Done.
 
 How to use?
+-----------
 ```
 // display "Sample Mesasge" at the bottom of targetView for 2 seconds
 MSToast.showToast(targetView, text: "Sample Message", duration: 2); 
