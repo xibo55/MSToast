@@ -15,29 +15,29 @@ public class MSToast: NSObject {
     
     // styles
     /// the horizontal margin on each side between toast container view and device side edges
-    public static var minimumOutsideHorizontalMargin: CGFloat = 20.0;
+    static var minimumOutsideHorizontalMargin: CGFloat = 20.0;
     /// the vertical margin at the bottom between toast container view and device bottom edge
-    public static var minimumOutsideVerticalMargin: CGFloat = 20.0;
+    static var minimumOutsideVerticalMargin: CGFloat = 20.0;
     /// the horizontal padding on left&right sides between the outside toast container view rect and the inside message label rect
-    public static var minimumInsideHorizontalPadding: CGFloat = 20.0;
+    static var minimumInsideHorizontalPadding: CGFloat = 20.0;
     /// the vertical padding on top&bottom sides between the outside toast container view rect and the inside message label rect
-    public static var minimumInsideVerticalPadding: CGFloat = 10.0;
+    static var minimumInsideVerticalPadding: CGFloat = 10.0;
     
     /// the containers background color. use this to set its background opacity as well
-    public static var containerBackgroundColor: UIColor = MSHelpers.rgba(0, g: 0, b: 0, a: 0.8);
-    public static var containerCornerRadius: CGFloat = 5.0;
-    public static var messageFont: UIFont = UIFont.systemFont(ofSize: 15.0);
-    public static var messageTextColor: UIColor = UIColor.white;
+    static var containerBackgroundColor: UIColor = MSHelpers.rgba(0, g: 0, b: 0, a: 0.8);
+    static var containerCornerRadius: CGFloat = 5.0;
+    static var messageFont: UIFont = UIFont.systemFont(ofSize: 15.0);
+    static var messageTextColor: UIColor = UIColor.white;
     
     /// the gradual show/hide animation duration
-    public static var showHideAnimationDuration = 0.2;
-    
+    static var showHideAnimationDuration = 0.2;
+
     // array that holds all current toasts
     static var toasts: [UIView] = [UIView]();
     
     // the timer for hiding
     static var hideTimer: Timer?
-    
+
     /// Show Toast
     /// - parameter targetView: the target container view to be displaying the toast, usually the vc.view
     /// - parameter text: the message to be displayed
@@ -86,7 +86,7 @@ public class MSToast: NSObject {
         containerView.layer.cornerRadius = MSToast.containerCornerRadius;
         containerView.clipsToBounds = true;
         containerView.layer.opacity = 0.0;
-        
+
         // adding the views together
         containerView.addSubview(messageLabel);
         targetView.addSubview(containerView);
@@ -112,8 +112,8 @@ public class MSToast: NSObject {
                 self.hideTimer = Timer.scheduledTimer(timeInterval: duration, target: self, selector: #selector(hideAllToasts), userInfo: nil, repeats: false);
             });
             
-            // if there are no toast currently showing
-            // just show the new one
+        // if there are no toast currently showing
+        // just show the new one
         } else {
             MSHelpers.showToastWithAnimation(containerView, duration: MSToast.showHideAnimationDuration);
             toasts.append(containerView);
@@ -136,7 +136,7 @@ public class MSToast: NSObject {
     }
     
     
-    
+
 }
 
 

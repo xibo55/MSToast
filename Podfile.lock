@@ -1,0 +1,12 @@
+PODS:
+  - MSToast (0.1.0)
+
+DEPENDENCIES:
+  - MSToast
+
+SPEC CHECKSUMS:
+  MSToast: 07df1cf8f9d03ef513aa6bdf64e4fdf670db076a
+
+PODFILE CHECKSUM: de5b6de9bcb2a6eb0282010b3dcd2bd900ee91c6
+
+COCOAPODS: 1.1.0.rc.2

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0077E3C69CD8291E37A96A37 /* Pods_MSToastExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF8D7D800EDE19866C443DC /* Pods_MSToastExample.framework */; };
 		1E03F3CD1E2FF45A007782F8 /* MSToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E03F3CC1E2FF45A007782F8 /* MSToast.swift */; };
 		1EE9036E1E2839C8002D718D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE9036D1E2839C8002D718D /* AppDelegate.swift */; };
 		1EE903701E2839C8002D718D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE9036F1E2839C8002D718D /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		1EE903741E2839C8002D718D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EE903771E2839C8002D718D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EE903791E2839C8002D718D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EFA6A6A8F7976B93A207D75 /* Pods-MSToastExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSToastExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSToastExample/Pods-MSToastExample.debug.xcconfig"; sourceTree = "<group>"; };
+		ACF8D7D800EDE19866C443DC /* Pods_MSToastExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSToastExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96BE2C53BF8A6851A04C3B9 /* Pods-MSToastExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSToastExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSToastExample/Pods-MSToastExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0077E3C69CD8291E37A96A37 /* Pods_MSToastExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				1EE9036C1E2839C8002D718D /* MSToastExample */,
 				1EE9036B1E2839C8002D718D /* Products */,
+				2E2BA15575B419D47D1C27D0 /* Pods */,
+				B4E1D6A8483FB3AC3D19D964 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,23 @@
 			path = MSToastExample;
 			sourceTree = "<group>";
 		};
+		2E2BA15575B419D47D1C27D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EFA6A6A8F7976B93A207D75 /* Pods-MSToastExample.debug.xcconfig */,
+				D96BE2C53BF8A6851A04C3B9 /* Pods-MSToastExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4E1D6A8483FB3AC3D19D964 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACF8D7D800EDE19866C443DC /* Pods_MSToastExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EE9037C1E2839C8002D718D /* Build configuration list for PBXNativeTarget "MSToastExample" */;
 			buildPhases = (
+				0195AE310942B1F18E2804D8 /* [CP] Check Pods Manifest.lock */,
 				1EE903661E2839C8002D718D /* Sources */,
 				1EE903671E2839C8002D718D /* Frameworks */,
 				1EE903681E2839C8002D718D /* Resources */,
+				80FD9435640A64B1ABFDD1B7 /* [CP] Embed Pods Frameworks */,
+				2A9AB13D4DB33A813F5C9DDA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0195AE310942B1F18E2804D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2A9AB13D4DB33A813F5C9DDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSToastExample/Pods-MSToastExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80FD9435640A64B1ABFDD1B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MSToastExample/Pods-MSToastExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1EE903661E2839C8002D718D /* Sources */ = {
@@ -269,6 +344,7 @@
 		};
 		1EE9037D1E2839C8002D718D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EFA6A6A8F7976B93A207D75 /* Pods-MSToastExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CLUBC77HUG;
@@ -287,6 +363,7 @@
 		};
 		1EE9037E1E2839C8002D718D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D96BE2C53BF8A6851A04C3B9 /* Pods-MSToastExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CLUBC77HUG;

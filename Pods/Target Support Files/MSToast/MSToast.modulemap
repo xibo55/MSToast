@@ -1,0 +1,6 @@
+framework module MSToast {
+  umbrella header "MSToast-umbrella.h"
+
+  export *
+  module * { export * }
+}
